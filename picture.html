@@ -29,6 +29,28 @@ li {
 li:last-of-type {
     margin-right: 0;
 }
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.slider-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.slider-btn:hover {
+    background-color: #555;
+}
+.slider-btn:active {
+    background-color: #222;
+}
 </style>
 </head>
 <body>
@@ -48,8 +70,13 @@ li:last-of-type {
             <li><img src="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/1.png?raw=true" class="thumb" data-image="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img1.JPG?raw=true"></li>
             <li><img src="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/2.png?raw=true" class="thumb" data-image="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img2.JPG?raw=true"></li>
             <li><img src="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/3.png?raw=true" class="thumb" data-image="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img3.JPG?raw=true"></li>
-            <li><img src="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/4.png?raw=true" class="thumb" data-image="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img4.JPG?raw=true"></li>
+            <li><img src="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/4.png?raw=true" class="thumb" data-image="https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img4.png?raw=true"></li>
         </ul>
+        <div class="slider-container">
+            <button class="slider-btn" id="prevBtn">&lt;</button>
+            <span id="counter" style="flex: 1; text-align: center;">1 / 4</span>
+            <button class="slider-btn" id="nextBtn">&gt;</button>
+        </div>
     </div>
 </section>
 </div><!-- /.container -->
