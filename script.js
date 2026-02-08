@@ -1,13 +1,18 @@
 'use strict';
 
-const thumbs = document.querySelectorAll('.thumb');
 const bigImg = document.getElementById('bigimg');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const counter = document.getElementById('counter');
 
+const images = [
+    'https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img1.JPG?raw=true',
+    'https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img2.JPG?raw=true',
+    'https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img3.JPG?raw=true',
+    'https://github.com/nishimoriken/nishimoriken.github.io/blob/main/images/img4.png?raw=true'
+];
+
 let currentIndex = 0;
-const images = Array.from(thumbs).map(thumb => thumb.dataset.image);
 
 function updateImage(index) {
     if (index < 0) {
@@ -27,10 +32,4 @@ prevBtn.addEventListener('click', function() {
 
 nextBtn.addEventListener('click', function() {
     updateImage(currentIndex + 1);
-});
-
-thumbs.forEach(function(item, index) {
-    item.onclick = function() {
-        updateImage(index);
-    }
 });
