@@ -14,10 +14,49 @@
             max-width: 935px;
             margin: 0 auto;
         }
+
         .img_header {
             width: 150px;
             height: auto;
         }
+
+        .img_icon {
+            width: 150px;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            gap: 44px;
+            align-items: flex-start;
+            padding: 44px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .profile > div:first-child {
+            flex-shrink: 0;
+        }
+
+        .profile > div:first-child div {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: clip;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #e5e5e5;
+            font-size: 60;
+        }
+
+        .profile > div:last-child {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
     </style>
 </head>
 <body>
@@ -28,6 +67,41 @@
         <div>
             <button style="padding: 8px 16px; background-color: #0095f6; color: white; border: none; border-radius: 6px; cursor: pointer;">ログイン</button>
         </div>
+    </div>
+
+    <div class="main">
+        <div class="profile">
+            <div>
+                <div>
+                    <img class="img_icon" src="./images/icon3.jpeg" alt="😎">
+                </div>
+            </div>
+            <div>
+                <div class="profile-header">
+                    <span class="profile-name">nishimoriken_no_</span>
+                    <span class="verify-badge">✓</span>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">123</span>
+                        <span>投稿</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1億</span>
+                        <span>フォロワー</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span>フォロー中</span>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <div>西森健</div>
+                    <div>20030525</div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
