@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("IGMAAWebBloksFullPageRoot.entrypoint",["IGMAAWebBloksFullPageRootQuery$Parameters","JSResourceForInteraction"],(function(t,n,r,o,a,i,l){"use strict";var e={getPreloadProps:function(t){var e={input:{appid:t.routeProps.appId,bloks_versioning_id:t.routeProps.bloks_versioning_id,params:t.routeProps.params}};return{queries:{query:{parameters:r("IGMAAWebBloksFullPageRootQuery$Parameters"),variables:e}}}},root:r("JSResourceForInteraction")("IGMAAWebBloksFullPageRoot.react").__setRef("IGMAAWebBloksFullPageRoot.entrypoint")};l.default=e}),98);

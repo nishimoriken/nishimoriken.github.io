@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("IGMAAWebBloksFullPageRoot.react",["CAAIGCookieConsent.react","CometRelay","IGMAAWebBloksFullPageRootQuery.graphql","IGWebBloksApp","qex","react","useJSON"],(function(t,n,r,o,a,i,l){"use strict";var e,s,u=s||(s=o("react"));function c(t){var a=o("CometRelay").usePreloadedQuery(e!==void 0?e:e=n("IGMAAWebBloksFullPageRootQuery.graphql"),t.queries.query),i=r("useJSON")(a.fetch_bloks_payload_for_comet.payload),l=r("qex")._("4598")===!0,s=!l,c=l;return u.jsxs("div",{className:"x1gvbg2u x1odjw0f xh8yej3",children:[u.jsx(r("IGWebBloksApp"),{disableHistoryStack:s,enableCometRouter:c,payload:i}),u.jsx(r("CAAIGCookieConsent.react"),{})]})}c.displayName=c.name+" [from "+i.id+"]",l.default=c}),98);
